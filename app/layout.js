@@ -1,14 +1,19 @@
-
+// layout.js
 import '../styles/globals.css';
-
 export const metadata = {
-  title: 'TODO App in Next JS',
+  title: 'Todo App',
+  description: 'A clean and modern todo application',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-gray-50">{children}</body>
+      <body className="bg-gradient-to-br from-blue-50 to-purple-100 text-gray-800 min-h-screen font-sans">
+        <main className="flex items-center justify-center min-h-screen p-4">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
+
